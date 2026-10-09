@@ -1,0 +1,160 @@
+/* Estilos globales y paleta de Harmony-Player CLI */
+
+Screen {
+    background: #0f172a;
+    color: #e2e8f0;
+    layout: vertical;
+}
+
+#header-container {
+    dock: top;
+    height: 3;
+    background: #1e293b;
+    border-bottom: heavy #38bdf8;
+    align: center middle;
+}
+
+#header-title {
+    text-style: bold;
+    color: #38bdf8;
+}
+
+#path-bar {
+    height: 1;
+    background: #0f172a;
+    color: #94a3b8;
+    padding-left: 1;
+    text-style: italic;
+}
+
+#main-content {
+    height: 1fr;
+    layout: horizontal;
+    padding: 1;
+}
+
+#browser-container {
+    width: 52%;
+    height: 100%;
+    border: round #334155;
+    background: #1e293b;
+    padding: 0 1;
+}
+
+#browser-title {
+    text-style: bold;
+    color: #60a5fa;
+    border-bottom: solid #334155;
+    margin-bottom: 1;
+}
+
+#file-list {
+    height: 1fr;
+    background: #1e293b;
+    border: none;
+}
+
+#file-list:focus > .option-list--option-highlighted {
+    background: #0284c7;
+    color: #ffffff;
+    text-style: bold;
+}
+
+#panel-right {
+    width: 48%;
+    height: 100%;
+    layout: vertical;
+    margin-left: 1;
+}
+
+#metadata-card {
+    height: auto;
+    border: round #334155;
+    background: #1e293b;
+    padding: 1;
+    margin-bottom: 1;
+}
+
+.meta-label {
+    color: #94a3b8;
+    text-style: bold;
+}
+
+.meta-value {
+    color: #f1f5f9;
+    margin-bottom: 1;
+}
+
+#visualizer-card {
+    height: auto;
+    border: round #334155;
+    background: #1e293b;
+    padding: 1;
+    margin-bottom: 1;
+}
+
+#visualizer-header {
+    height: 1;
+    layout: horizontal;
+    margin-bottom: 0;
+}
+
+#visualizer-title {
+    color: #38bdf8;
+    text-style: bold;
+    width: 1fr;
+}
+
+#visualizer-mode-badge {
+    color: #a78bfa;
+    text-style: italic;
+    width: auto;
+}
+
+#visualizer-canvas {
+    height: 6;
+    margin-top: 1;
+    margin-bottom: 0;
+}
+
+.freq-legend {
+    color: #64748b;
+    text-style: bold;
+    margin-top: 1;
+    text-align: center;
+}
+
+#player-controls-card {
+    height: auto;
+    border: round #334155;
+    background: #1e293b;
+    padding: 1;
+}
+
+#status-indicator {
+    text-style: bold;
+    color: #38bdf8;
+    margin-bottom: 1;
+}
+
+#progress-bar {
+    margin: 1 0;
+    width: 100%;
+}
+
+#time-label {
+    text-align: center;
+    color: #cbd5e1;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#volume-indicator {
+    color: #a78bfa;
+    text-style: bold;
+}
+
+Footer {
+    background: #1e293b;
+    color: #94a3b8;
+}
