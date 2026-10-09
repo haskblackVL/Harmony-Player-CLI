@@ -19,10 +19,21 @@ from harmony_player.ui.widgets import MetadataCard, PlayerControlCard, Visualize
 from harmony_player.video_engine import VideoPlayer
 
 
+def _load_app_styles() -> str:
+    """Carga los estilos TCSS de la aplicación de forma segura para soportar distribución en paquetes."""
+    css_file = Path(__file__).parent / "styles.tcss"
+    if css_file.is_file():
+        try:
+            return css_file.read_text(encoding="utf-8")
+        except Exception:
+            pass
+    return ""
+
+
 class HarmonyPlayerApp(App[None]):
     """Aplicación TUI de reproducción de música Harmony-Player."""
 
-    CSS_PATH = "styles.tcss"
+    CSS = _load_app_styles()
     TITLE = "Harmony-Player CLI"
 
     BINDINGS = [

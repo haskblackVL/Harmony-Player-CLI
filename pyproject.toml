@@ -39,3 +39,6 @@ harmony-player = "harmony_player.main:main"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["harmony_player*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.tcss"]
